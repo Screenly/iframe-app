@@ -3,7 +3,7 @@ syntax: manifest_v1
 id: 01JZHNVPTK5HK9FD9DXVHJQKA5
 ready_signal: true
 description: Screenly iframe Edge App
-icon: 'https://playground.srly.io/edge-apps/iframe/static/images/icon.svg'
+icon: https://playground.srly.io/edge-apps/icons/iframe.svg
 author: Screenly, Inc.
 categories:
   - Utilities
