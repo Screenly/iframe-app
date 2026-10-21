@@ -1,3 +1,5 @@
+[![Version](https://img.shields.io/github/v/release/Screenly/iframe-app)](https://github.com/Screenly/iframe-app/releases/latest)
+
 # Creating an Edge App with iFrame in Screenly
 
 This guide will walk you through the steps to create an Edge App in Screenly that uses an iFrame to load another HTML page or dashboard.
