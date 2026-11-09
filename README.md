@@ -1,3 +1,5 @@
+[![Version](https://img.shields.io/github/v/release/Screenly/iframe-app)](https://github.com/Screenly/iframe-app/releases/latest)
+
 # Creating an Edge App with iFrame in Screenly
 
 This guide will walk you through the steps to create an Edge App in Screenly that uses an iFrame to load another HTML page or dashboard.
@@ -59,3 +61,19 @@ Steps 9. **Assign Asset to Playlist and Device**
 - Assign the playlist to a device.
 
 Now, the iFrame Edge App has been configured, and the designated webpage/dashboard will be presented on the Screenly-connected TV/Monitor.
+
+## Releasing
+
+Pushes to `main` start a stage deploy, which waits for approval. To release to production, tag a commit on `main` and push the tag (the workflow refuses tags not on `main`); the production deploy also waits for approval:
+
+```bash
+git checkout main && git pull
+git tag v26.10.0
+git push origin v26.10.0
+```
+
+Then publish a GitHub Release whose notes list the pull requests merged since the previous release. Add `--draft` to review the notes before publishing:
+
+```bash
+gh release create v26.10.0 --verify-tag --generate-notes --title v26.10.0
+```
